@@ -1,3 +1,4 @@
+import { PlaceholderDirective } from './shared/placeholder/placeholder.directive';
 import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -36,6 +37,7 @@ import { AlertComponent } from './shared/alert/alert.component';
     AuthComponent,
     LoadingSpinnerComponent,
     AlertComponent,
+    PlaceholderDirective,
   ],
   imports: [
     BrowserModule,
@@ -52,5 +54,6 @@ import { AlertComponent } from './shared/alert/alert.component';
     },
   ],
   bootstrap: [AppComponent],
+  // entryComponents: [AlertComponent],
 })
 export class AppModule {}
