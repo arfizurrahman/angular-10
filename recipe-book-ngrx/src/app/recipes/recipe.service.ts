@@ -1,5 +1,4 @@
 import { Subject } from 'rxjs';
-import { ShoppingListService } from './../shopping-list/shopping-list.service';
 import { Injectable } from '@angular/core';
 
 import { Recipe } from './recipe.model';
@@ -36,10 +35,7 @@ export class RecipeService {
 
   private recipes: Recipe[] = [];
 
-  constructor(
-    private slService: ShoppingListService,
-    private store: Store<fromShoppingList.AppState>
-  ) {}
+  constructor(private store: Store<fromShoppingList.AppState>) {}
 
   setRecipes(recipes: Recipe[]) {
     this.recipes = recipes;
